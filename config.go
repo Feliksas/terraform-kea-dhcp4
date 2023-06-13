@@ -73,7 +73,7 @@ type Dhcp4 struct {
 	HostReservationIdentifiers []string                `json:"host-reservation-identifiers"`
 	InterfacesConfig           InterfacesConfig        `json:"interfaces-config"`
 	LeaseDatabase              LeaseDatabase           `json:"lease-database"`
-	Loggers                    []Loggers               `json:"loggers"`
+	Loggers                    []Loggers               `json:"loggers,omitempty"`
 	MatchClientId              bool                    `json:"match-client-id"`
 	NextServer                 string                  `json:"next-server"`
 	OptionData                 []OptionData            `json:"option-data"`
